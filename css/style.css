@@ -1,0 +1,134 @@
+:root {
+    --global-font: "Montserrat", Arial;
+    --global-color: rgb(50, 50, 50);
+}
+
+html, body {
+    display: block;
+    background-color: rgb(128, 188, 163);
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: var(--global-font);
+    color: var(--global-color);
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7%;
+    background-color: white;
+}
+
+.header-buttons {
+    text-decoration: none;
+    color: var(--global-color);
+    margin: 0 20px;
+    font-weight: 500;
+}
+
+.header-buttons:visited {
+    text-decoration: none;
+    color: var(--global-color);
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.signup-form {
+    height: 70%;
+    width: 550px;
+    margin: 0 50px;
+    margin-top: 40px;
+    /* background-color: rgb(246, 247, 189); */
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 7px 7px 5px rgb(0, 0, 0, 0.10);
+}
+
+.signup-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: lightpink; */
+    height: 100%;
+}
+
+.signup-flex input {
+    width: 70%;
+    margin: 10px 0;
+    height: 40px;
+    font-family: var(--global-font);
+    font-weight: 400;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    outline: none;
+    color: var(--global-color);
+    transition: background-color 0.15s;
+}
+
+.signup-flex input:hover {
+    background-color: rgb(250, 250, 250);
+}
+
+.signup-flex input:focus {
+    background-color: rgb(250, 250, 250);
+}
+
+.signup-flex button {
+    font-family: var(--global-font);
+    font-weight: 500;
+    width: 70%;
+    margin: 10px 0;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(230, 172, 39);
+    color: var(--global-color);
+    transition: background-color 0.15s;
+}
+
+.signup-flex button:hover {
+    background-color: rgb(254, 184, 19);
+}
+
+.form-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--global-color);
+}
+
+.profile-info {
+    padding: 30px;
+}
+
+.profile-info div {
+    margin: 15px 0;
+}
+
+.active-page {
+    color: rgb(230, 172, 39) !important;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--global-color);
+    font-weight: 600;
+}
+
+.link:hover {
+    color: rgb(230, 172, 39);
+}
